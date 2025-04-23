@@ -1,0 +1,219 @@
+.receipt-container {
+    font-family: 'Courier New', Courier, monospace;
+    width: 300px;
+    padding: 20px;
+    background: white;
+    color: #333;
+    border: 2px solid #22c55e;
+    border-radius: 10px;
+}
+
+.receipt-header {
+    text-align: center;
+    border-bottom: 2px dashed #22c55e;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.receipt-header .logo {
+    margin-bottom: 10px;
+}
+
+.receipt-header .logo h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.receipt-header .store-info {
+    margin-bottom: 15px;
+    color: #333;
+    background-color: #f0fdf4;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.receipt-header .store-info p {
+    margin: 2px 0;
+    font-size: 14px;
+}
+
+.receipt-details {
+    margin: 10px 0;
+    background-color: #e0f2fe;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.receipt-details p {
+    margin: 3px 0;
+    font-size: 14px;
+}
+
+.receipt-divider {
+    margin: 15px 0;
+    border-bottom: 1px dashed #ccc;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+
+.receipt-items {
+    margin: 15px 0;
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+.items-list .item {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+    font-size: 14px;
+    background-color: #f9fafb;
+    padding: 6px;
+    border-radius: 4px;
+}
+
+.item-details {
+    flex: 1;
+}
+
+.item-name {
+    font-weight: bold;
+}
+
+.item-price {
+    color: #666;
+    font-size: 12px;
+}
+
+.item-total {
+    min-width: 80px;
+    text-align: right;
+}
+
+.receipt-summary {
+    margin: 15px 0;
+    padding: 10px 0;
+    border-top: 2px dashed #22c55e;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.summary-row.total {
+    font-weight: bold;
+    font-size: 16px;
+    color: #16a34a;
+    background-color: #dcfce7;
+    border: 2px dashed #22c55e;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 6px;
+}
+
+.receipt-footer {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 2px dashed #facc15;
+    background-color: #fef9c3;
+    color: #92400e;
+    font-size: 13px;
+    border-radius: 6px;
+}
+
+.served-by {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer-messages {
+    font-size: 12px;
+}
+
+.footer-messages p {
+    margin: 5px 0;
+}
+
+.thank-you {
+    font-weight: bold;
+    color: #16a34a;
+    font-size: 14px;
+}
+
+.welcome {
+    color: #666;
+}
+
+.vat-notice {
+    font-style: italic;
+    color: #666;
+    margin: 5px 0;
+}
+
+.registered {
+    color: #0ea5e9;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.developer {
+    font-size: 11px;
+    color: #64748b;
+    margin-top: 10px;
+}
+
+@media print {
+    .receipt-container {
+        width: 80mm;
+        padding: 0;
+        border: none;
+    }
+
+    button {
+        display: none;
+    }
+}
+@media screen and (max-width: 600px) {
+    .receipt-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .receipt-header h2 {
+        font-size: 20px;
+    }
+
+    .receipt-header .store-info p {
+        font-size: 12px;
+    }
+
+    .item-header,
+    .items-list .item,
+    .summary-row {
+        font-size: 12px;
+    }
+
+    .thank-you,
+    .welcome,
+    .vat-notice,
+    .registered,
+    .developer {
+        font-size: 12px;
+    }
+}
+.receipt-header .logo img {
+    max-width: 100px;
+    height: auto;
+}
